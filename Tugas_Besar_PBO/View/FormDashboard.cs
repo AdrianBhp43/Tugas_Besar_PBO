@@ -26,5 +26,10 @@ namespace Tugas_Besar_PBO
         {
 
         }
+
+        private void pendaftaranToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

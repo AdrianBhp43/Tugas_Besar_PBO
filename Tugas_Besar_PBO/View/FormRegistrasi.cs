@@ -26,16 +26,7 @@ namespace Tugas_Besar_PBO.View
             }
             else
             {
-                Barang brg = new Barang();
-                m_brg.barang = tbNamaBarang.Text;
-                m_brg.hrg = tbHarga.Text;
 
-                brg.Insert(m_brg);
-
-                tbNamaBarang.Text = "";
-                tbHarga.Text = "";
-
-                Show();
             }
         }
     }
