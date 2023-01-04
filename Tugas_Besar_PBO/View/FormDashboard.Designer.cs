@@ -39,6 +39,8 @@
             this.prestasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informasiPrestasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tambahPrestasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pendaftaranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pemilihanProgamStudiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,6 +100,9 @@
             // 
             // transaksiToolStripMenuItem
             // 
+            this.transaksiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pendaftaranToolStripMenuItem,
+            this.pemilihanProgamStudiToolStripMenuItem});
             this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
             this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.transaksiToolStripMenuItem.Text = "&Transaksi";
@@ -123,6 +128,18 @@
             this.tambahPrestasiToolStripMenuItem.Name = "tambahPrestasiToolStripMenuItem";
             this.tambahPrestasiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tambahPrestasiToolStripMenuItem.Text = "Tambah Prestasi";
+            // 
+            // pendaftaranToolStripMenuItem
+            // 
+            this.pendaftaranToolStripMenuItem.Name = "pendaftaranToolStripMenuItem";
+            this.pendaftaranToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.pendaftaranToolStripMenuItem.Text = "Pendaftaran";
+            // 
+            // pemilihanProgamStudiToolStripMenuItem
+            // 
+            this.pemilihanProgamStudiToolStripMenuItem.Name = "pemilihanProgamStudiToolStripMenuItem";
+            this.pemilihanProgamStudiToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.pemilihanProgamStudiToolStripMenuItem.Text = "Pemilihan Progam Studi";
             // 
             // FormDashboard
             // 
@@ -154,6 +171,8 @@
         private System.Windows.Forms.ToolStripMenuItem prestasiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informasiPrestasiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tambahPrestasiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pendaftaranToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pemilihanProgamStudiToolStripMenuItem;
     }
 }
 

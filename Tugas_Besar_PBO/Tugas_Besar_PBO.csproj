@@ -86,6 +86,12 @@
   <ItemGroup>
     <Compile Include="Controller\Koneksi.cs" />
     <Compile Include="Controller\ValidasiLogin.cs" />
+    <Compile Include="View\FormBiodata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormBiodata.Designer.cs">
+      <DependentUpon>FormBiodata.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     <Compile Include="View\FormRegistrasi.Designer.cs">
       <DependentUpon>FormRegistrasi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormBiodata.resx">
+      <DependentUpon>FormBiodata.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
