@@ -21,5 +21,10 @@ namespace Tugas_Besar_PBO
         {
             this.Close();
         }
+
+        private void transaksiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
