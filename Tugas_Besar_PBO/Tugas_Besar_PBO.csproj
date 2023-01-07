@@ -84,9 +84,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Biodata.cs" />
     <Compile Include="Controller\Koneksi.cs" />
     <Compile Include="Controller\Register.cs" />
     <Compile Include="Controller\ValidasiLogin.cs" />
+    <Compile Include="Model\m_biodata.cs" />
     <Compile Include="Model\m_register.cs" />
     <Compile Include="View\FormBiodata.cs">
       <SubType>Form</SubType>

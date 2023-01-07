@@ -52,5 +52,13 @@ namespace Tugas_Besar_PBO.View
             }
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+            FormLogin fl = new FormLogin();
+            fl.Show();
+            this.Hide();
+            
+        }
     }
 }

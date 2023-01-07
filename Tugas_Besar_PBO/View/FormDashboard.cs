@@ -30,7 +30,9 @@ namespace Tugas_Besar_PBO
 
         private void pendaftaranToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormBiodata fb = new FormBiodata();
+            fb.MdiParent = this;
+            fb.Show();
         }
 
         private void tambahPrestasiToolStripMenuItem_Click(object sender, EventArgs e)

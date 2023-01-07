@@ -75,5 +75,12 @@ namespace Tugas_Besar_PBO.View
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            FormRegister fr = new FormRegister();
+            fr.Show();
+            this.Hide();
+        }
     }
 }
