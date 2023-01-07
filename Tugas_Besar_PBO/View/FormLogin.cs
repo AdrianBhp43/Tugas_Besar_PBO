@@ -18,7 +18,7 @@ namespace Tugas_Besar_PBO.View
             InitializeComponent();
         }
 
-        string koneksi = "datasource=127.0.0.1;port=4306;username=root;password=;database=db_tubes_pbo;";
+        string koneksi = "datasource=127.0.0.1;port=3306;username=root;password=;database=db_tubes_pbo;";
 
         public void login()
         {

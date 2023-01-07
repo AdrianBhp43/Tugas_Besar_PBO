@@ -85,7 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Koneksi.cs" />
+    <Compile Include="Controller\Register.cs" />
     <Compile Include="Controller\ValidasiLogin.cs" />
+    <Compile Include="Model\m_register.cs" />
     <Compile Include="View\FormBiodata.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,11 +114,11 @@
     <Compile Include="View\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormRegistrasi.cs">
+    <Compile Include="View\FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormRegistrasi.Designer.cs">
-      <DependentUpon>FormRegistrasi.cs</DependentUpon>
+    <Compile Include="View\FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="View\FormBiodata.resx">
       <DependentUpon>FormBiodata.cs</DependentUpon>
@@ -139,8 +141,8 @@
     <EmbeddedResource Include="View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormRegistrasi.resx">
-      <DependentUpon>FormRegistrasi.cs</DependentUpon>
+    <EmbeddedResource Include="View\FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -156,8 +158,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

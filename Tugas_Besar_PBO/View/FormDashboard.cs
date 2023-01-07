@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tugas_Besar_PBO.View;
 
 namespace Tugas_Besar_PBO
 {
@@ -30,6 +31,13 @@ namespace Tugas_Besar_PBO
         private void pendaftaranToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tambahPrestasiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormInputPrestasi fip = new FormInputPrestasi();
+            fip.MdiParent = this;
+            fip.Show();
         }
     }
 }
