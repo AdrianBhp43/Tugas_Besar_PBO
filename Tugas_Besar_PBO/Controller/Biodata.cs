@@ -21,9 +21,8 @@ namespace Tugas_Besar_PBO.Controller
             {
                 koneksi.OpenConnection();
                 koneksi.ExecuteQuery("INSERT INTO pendaftaran (nama, ttl, jenis_kelamin, asal_sekolah, nisn, tahun_lulus, alamat, email, no_hp) " +
-                    "VALUES('" + biodata.Nama + "', '" +
-                biodata.Ttl + "','" + biodata.Jenis_kelamin + biodata.Asal_sekolah + "', '" +
-                biodata.Nisn + "','" + biodata.Tahun_lulus + biodata.Alamat + "', '" +
+                    "VALUES('" + biodata.Nama + "', '" + biodata.Ttl + "','" + biodata.Jenis_kelamin + "','"  + biodata.Asal_sekolah + "', '" +
+                biodata.Nisn + "','" + biodata.Tahun_lulus + "','"  + biodata.Alamat + "', '" +
                 biodata.Email + "','" + biodata.No_hp + "')");
                 status = true;
                 MessageBox.Show("Input Behasil", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
