@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbJenisKelamin = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.tbNoHp = new System.Windows.Forms.TextBox();
@@ -50,7 +51,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbJenisKelamin = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -84,6 +84,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1164, 831);
             this.panel1.TabIndex = 0;
+            // 
+            // cbJenisKelamin
+            // 
+            this.cbJenisKelamin.FormattingEnabled = true;
+            this.cbJenisKelamin.Items.AddRange(new object[] {
+            "Laki-Laki",
+            "Perempuan"});
+            this.cbJenisKelamin.Location = new System.Drawing.Point(465, 307);
+            this.cbJenisKelamin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbJenisKelamin.Name = "cbJenisKelamin";
+            this.cbJenisKelamin.Size = new System.Drawing.Size(444, 28);
+            this.cbJenisKelamin.TabIndex = 22;
             // 
             // btnSave
             // 
@@ -297,18 +309,6 @@
             this.label1.Size = new System.Drawing.Size(140, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Form Pendaftaran";
-            // 
-            // cbJenisKelamin
-            // 
-            this.cbJenisKelamin.FormattingEnabled = true;
-            this.cbJenisKelamin.Items.AddRange(new object[] {
-            "Laki-Laki",
-            "Perempuan"});
-            this.cbJenisKelamin.Location = new System.Drawing.Point(465, 307);
-            this.cbJenisKelamin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cbJenisKelamin.Name = "cbJenisKelamin";
-            this.cbJenisKelamin.Size = new System.Drawing.Size(444, 28);
-            this.cbJenisKelamin.TabIndex = 22;
             // 
             // FormBiodata
             // 

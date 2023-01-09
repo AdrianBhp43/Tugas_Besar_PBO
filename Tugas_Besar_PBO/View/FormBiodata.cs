@@ -17,10 +17,12 @@ namespace Tugas_Besar_PBO.View
 
         Koneksi koneksi = new Koneksi();
         m_biodata m_bio = new m_biodata();
+        
 
         public FormBiodata()
         {
             InitializeComponent();
+            this.Size = new Size(1237, 853);
         }
 
         private void FormBiodata_Load(object sender, EventArgs e)

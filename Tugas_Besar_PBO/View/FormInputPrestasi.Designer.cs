@@ -29,50 +29,47 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbPencapaian = new System.Windows.Forms.ComboBox();
+            this.cbTahunPerolehan = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.rbKelompok = new System.Windows.Forms.RadioButton();
+            this.rbIndividual = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbNamaKegiatan = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rbInternasional = new System.Windows.Forms.RadioButton();
+            this.rbNasional = new System.Windows.Forms.RadioButton();
+            this.rbProvinsi = new System.Windows.Forms.RadioButton();
+            this.rbKabupaten = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cbPencapaian);
+            this.panel1.Controls.Add(this.cbTahunPerolehan);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.radioButton6);
-            this.panel1.Controls.Add(this.radioButton5);
-            this.panel1.Controls.Add(this.radioButton4);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.rbKelompok);
+            this.panel1.Controls.Add(this.rbIndividual);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbNamaKegiatan);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
@@ -80,6 +77,120 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(786, 554);
             this.panel1.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbInternasional);
+            this.groupBox1.Controls.Add(this.rbProvinsi);
+            this.groupBox1.Controls.Add(this.rbNasional);
+            this.groupBox1.Controls.Add(this.rbKabupaten);
+            this.groupBox1.Location = new System.Drawing.Point(24, 227);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(403, 75);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tingkat";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(699, 528);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 19;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(27, 368);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Pencapaian";
+            // 
+            // cbPencapaian
+            // 
+            this.cbPencapaian.FormattingEnabled = true;
+            this.cbPencapaian.Items.AddRange(new object[] {
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022"});
+            this.cbPencapaian.Location = new System.Drawing.Point(30, 384);
+            this.cbPencapaian.Name = "cbPencapaian";
+            this.cbPencapaian.Size = new System.Drawing.Size(343, 21);
+            this.cbPencapaian.TabIndex = 14;
+            // 
+            // cbTahunPerolehan
+            // 
+            this.cbTahunPerolehan.FormattingEnabled = true;
+            this.cbTahunPerolehan.Items.AddRange(new object[] {
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022"});
+            this.cbTahunPerolehan.Location = new System.Drawing.Point(30, 333);
+            this.cbTahunPerolehan.Name = "cbTahunPerolehan";
+            this.cbTahunPerolehan.Size = new System.Drawing.Size(343, 21);
+            this.cbTahunPerolehan.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(27, 305);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Tahun Perolehan";
+            // 
+            // rbKelompok
+            // 
+            this.rbKelompok.AutoSize = true;
+            this.rbKelompok.Location = new System.Drawing.Point(151, 199);
+            this.rbKelompok.Name = "rbKelompok";
+            this.rbKelompok.Size = new System.Drawing.Size(93, 17);
+            this.rbKelompok.TabIndex = 5;
+            this.rbKelompok.Text = "Kelompok/ tim";
+            this.rbKelompok.UseVisualStyleBackColor = true;
+            // 
+            // rbIndividual
+            // 
+            this.rbIndividual.AutoSize = true;
+            this.rbIndividual.Location = new System.Drawing.Point(30, 199);
+            this.rbIndividual.Name = "rbIndividual";
+            this.rbIndividual.Size = new System.Drawing.Size(70, 17);
+            this.rbIndividual.TabIndex = 4;
+            this.rbIndividual.Text = "Individual";
+            this.rbIndividual.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 166);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Jenis Kegiatan";
+            // 
+            // tbNamaKegiatan
+            // 
+            this.tbNamaKegiatan.Location = new System.Drawing.Point(30, 129);
+            this.tbNamaKegiatan.Name = "tbNamaKegiatan";
+            this.tbNamaKegiatan.Size = new System.Drawing.Size(343, 20);
+            this.tbNamaKegiatan.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(27, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nama Kegiatan";
             // 
             // panel2
             // 
@@ -97,176 +208,6 @@
             this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tambah Prestasi";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nama Kegiatan";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(30, 129);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(343, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 166);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Jenis Kegiatan";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(30, 199);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(70, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.Text = "Individual";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(151, 199);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(93, 17);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.Text = "Kelompok/ tim";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 238);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Tingkat";
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(30, 267);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(77, 17);
-            this.radioButton3.TabIndex = 7;
-            this.radioButton3.Text = "Kabupaten";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(134, 267);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(62, 17);
-            this.radioButton4.TabIndex = 8;
-            this.radioButton4.Text = "Provinsi";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(234, 267);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(66, 17);
-            this.radioButton5.TabIndex = 9;
-            this.radioButton5.Text = "Nasional";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(334, 267);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(85, 17);
-            this.radioButton6.TabIndex = 10;
-            this.radioButton6.Text = "Internasional";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(349, 269);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Tingkat";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 305);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Tahun Perolehan";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "2018",
-            "2019",
-            "2020",
-            "2021",
-            "2022"});
-            this.comboBox1.Location = new System.Drawing.Point(30, 333);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(343, 21);
-            this.comboBox1.TabIndex = 13;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "2018",
-            "2019",
-            "2020",
-            "2021",
-            "2022"});
-            this.comboBox2.Location = new System.Drawing.Point(30, 384);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(343, 21);
-            this.comboBox2.TabIndex = 14;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(27, 368);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Pencapaian";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(307, 148);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(18, 204);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(307, 148);
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel3
             // 
@@ -289,6 +230,62 @@
             this.button1.Text = "Browse";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(18, 204);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(307, 148);
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(18, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(307, 148);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // rbInternasional
+            // 
+            this.rbInternasional.AutoSize = true;
+            this.rbInternasional.Location = new System.Drawing.Point(310, 31);
+            this.rbInternasional.Name = "rbInternasional";
+            this.rbInternasional.Size = new System.Drawing.Size(85, 17);
+            this.rbInternasional.TabIndex = 24;
+            this.rbInternasional.Text = "Internasional";
+            this.rbInternasional.UseVisualStyleBackColor = true;
+            // 
+            // rbNasional
+            // 
+            this.rbNasional.AutoSize = true;
+            this.rbNasional.Location = new System.Drawing.Point(210, 31);
+            this.rbNasional.Name = "rbNasional";
+            this.rbNasional.Size = new System.Drawing.Size(66, 17);
+            this.rbNasional.TabIndex = 23;
+            this.rbNasional.Text = "Nasional";
+            this.rbNasional.UseVisualStyleBackColor = true;
+            // 
+            // rbProvinsi
+            // 
+            this.rbProvinsi.AutoSize = true;
+            this.rbProvinsi.Location = new System.Drawing.Point(110, 31);
+            this.rbProvinsi.Name = "rbProvinsi";
+            this.rbProvinsi.Size = new System.Drawing.Size(62, 17);
+            this.rbProvinsi.TabIndex = 22;
+            this.rbProvinsi.Text = "Provinsi";
+            this.rbProvinsi.UseVisualStyleBackColor = true;
+            // 
+            // rbKabupaten
+            // 
+            this.rbKabupaten.AutoSize = true;
+            this.rbKabupaten.Location = new System.Drawing.Point(6, 31);
+            this.rbKabupaten.Name = "rbKabupaten";
+            this.rbKabupaten.Size = new System.Drawing.Size(77, 17);
+            this.rbKabupaten.TabIndex = 21;
+            this.rbKabupaten.Text = "Kabupaten";
+            this.rbKabupaten.UseVisualStyleBackColor = true;
+            // 
             // FormInputPrestasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,13 +294,16 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormInputPrestasi";
             this.Text = "FormInputPrestasi";
+            this.Load += new System.EventHandler(this.FormInputPrestasi_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -313,24 +313,24 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbKelompok;
+        private System.Windows.Forms.RadioButton rbIndividual;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNamaKegiatan;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbPencapaian;
+        private System.Windows.Forms.ComboBox cbTahunPerolehan;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbInternasional;
+        private System.Windows.Forms.RadioButton rbProvinsi;
+        private System.Windows.Forms.RadioButton rbNasional;
+        private System.Windows.Forms.RadioButton rbKabupaten;
     }
 }
