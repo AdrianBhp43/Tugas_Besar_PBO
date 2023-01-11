@@ -20,8 +20,10 @@ namespace Tugas_Besar_PBO.Controller
             try
             {
                 koneksi.OpenConnection();
-                koneksi.ExecuteQuery("INSERT INTO t_prestasi (nama_kegiatan, tingkat, tahun_perolehan, pencapaian) VALUES('" +
-                prestasi.Nama_kegiatan + "', '" + prestasi.Jenis_kegiatan + "', '" + prestasi.Tingkat + "','" + prestasi.Tahun_perolehan + "','" + prestasi.Pencapaian + "')");
+                koneksi.ExecuteQuery("INSERT INTO t_prestasi (nama_kegiatan, jenis_kegiatan, tingkat, tahun_perolehan, pencapaian) VALUES('" +
+                prestasi.Nama_kegiatan + "', '" + prestasi.Jenis_kegiatan + "', '" +
+                prestasi.Tingkat + "','" + 
+                prestasi.Tahun_perolehan + "','" + prestasi.Pencapaian + "')");
                 status = true;
                 MessageBox.Show("Data berhasil ditambahkan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();

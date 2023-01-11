@@ -29,7 +29,7 @@ namespace Tugas_Besar_PBO.View
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (tbNamaKegiatan.Text == "" || rbIndividual.Checked || rbKelompok.Checked || rbKabupaten.Checked || rbProvinsi.Checked || rbNasional.Checked || rbInternasional.Checked || cbTahunPerolehan.SelectedIndex == -1 || cbPencapaian.SelectedIndex == -1 )
+            if (tbNamaKegiatan.Text == "" || cbTahunPerolehan.SelectedIndex == -1 || cbPencapaian.SelectedIndex == -1 )
             {
                 MessageBox.Show("Data tidak boleh kosong", "Peringatan",
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -60,7 +60,7 @@ namespace Tugas_Besar_PBO.View
                 }
                 else
                 {
-                    Tingkat = rbNasional.Text;
+                    Tingkat = rbInternasional.Text;
                 }
 
             }
