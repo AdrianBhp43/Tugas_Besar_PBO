@@ -9,13 +9,14 @@ namespace Tugas_Besar_PBO.Model
 {
     internal class m_biodata
     {
-        string nama, ttl, jenis_kelamin, asal_sekolah, nisn, tahun_lulus, alamat, email, no_hp;
+        string id, nama, ttl, jenis_kelamin, asal_sekolah, nisn, tahun_lulus, alamat, email, no_hp;
         public m_biodata()
         {
         }
 
-        public m_biodata(string nama, string ttl, string jenis_kelamin, string asal_sekolah, string nisn, string tahun_lulus, string alamat, string email, string no_hp)
+        public m_biodata(string id, string nama, string ttl, string jenis_kelamin, string asal_sekolah, string nisn, string tahun_lulus, string alamat, string email, string no_hp)
         {
+            this.id = id;
             this.nama = nama;
             this.ttl = ttl;
             this.jenis_kelamin = jenis_kelamin;
@@ -27,6 +28,7 @@ namespace Tugas_Besar_PBO.Model
             this.no_hp = no_hp;
         }
 
+        public string Id { get => id; set => id = value; }
         public string Nama { get => nama; set => nama = value; }
         public string Ttl { get => ttl; set => ttl = value; }
         public string Jenis_kelamin { get => jenis_kelamin; set => jenis_kelamin = value; }

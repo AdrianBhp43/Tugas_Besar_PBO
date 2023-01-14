@@ -128,6 +128,12 @@
     <Compile Include="View\FormPrestasiAdmin.Designer.cs">
       <DependentUpon>FormPrestasiAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormProgramstudi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormProgramstudi.Designer.cs">
+      <DependentUpon>FormProgramstudi.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormRegisterAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
