@@ -20,64 +20,72 @@ namespace Tugas_Besar_PBO.View
         //m_register m_reg = new m_register();
         m_biodata m_bio = new m_biodata();
         m_prestasi m_pres = new m_prestasi();
-        string id;
 
-        public void Tampil()
+        public void Show()
         {
             //Query DB
             //DataMahasiswa.DataSource = koneksi.ShowData("SELECT * FROM t_prestasi");
-            DataMahasiswa.DataSource = koneksi.ShowData("SELECT t_prestasi.nisn ,nama,nama_kegiatan ,jenis_kegiatan, tingkat, tahun_perolehan,alamat, pencapaian"
+            DataMahasiswa.DataSource = koneksi.ShowData("SELECT t_prestasi.nisn ,nama,nama_kegiatan ,jenis_kegiatan, tingkat, tahun_perolehan, pencapaian"
             + " FROM t_prestasi JOIN pendaftaran on pendaftaran.nisn = t_prestasi.nisn");
-            //DataMahasiswa.DataSource = koneksi.ShowData("SELECT * FROM biodata ");
+            /*DataMahasiswa.DataSource = koneksi.ShowData("SELECT" + " t_prestasi.nisn, nama, nama_kegiatan ,jenis_kegiatan, tingkat, tahun_perolehan, pencapaian"
+            + " FROM t_prestasi JOIN pendaftaran on pendaftaran.nisn = t_prestasi.nisn");*/
 
 
-
-            //Mengubah Nama Kolom Tabel
-            //DataMahasiswa.Columns[0].HeaderText = "Id";
-            //DataMahasiswa.Columns[0].HeaderText = "Id Prestasi";
             DataMahasiswa.Columns[0].HeaderText = "NISN";
-            DataMahasiswa.Columns[0].HeaderText = "Nama";
-            DataMahasiswa.Columns[0].HeaderText = "Nama Kegiatan";
-            DataMahasiswa.Columns[0].HeaderText = "Jenis Kegiatan";
-            DataMahasiswa.Columns[0].HeaderText = "Tingkat";
-            DataMahasiswa.Columns[0].HeaderText = "Tahun Peroleh";
-            DataMahasiswa.Columns[0].HeaderText = "Pencapaian";
+            DataMahasiswa.Columns[1].HeaderText = "Nama";
+            DataMahasiswa.Columns[2].HeaderText = "Nama Kegiatan";
+            DataMahasiswa.Columns[3].HeaderText = "Jenis Kegiatan";
+            DataMahasiswa.Columns[4].HeaderText = "Tingkat";
+            DataMahasiswa.Columns[5].HeaderText = "Tahun Perolehan";
+            DataMahasiswa.Columns[6].HeaderText = "Pencapaian";
         }
         public FormPrestasiAdmin()
         {
             InitializeComponent();
         }
 
-        public void GetNisnPdf()
-        {
-            koneksi.OpenConnection();
-            MySqlDataReader reader = koneksi.reader("SELECT * FROM pendaftaran");
-            while (reader.Read())
-            {
-                tbNisn.Text = reader.GetString(0);
-            }
-            reader.Close();
-            koneksi.CloseConnection();
-        }
-
-        public void GetNamaPdf()
-        {
-            koneksi.OpenConnection();
-            MySqlDataReader reader = koneksi.reader("SELECT * FROM pendaftaran + " + 
-                "WHERE nisn = '" + tbNisn.Text + "'");
-            while (reader.Read())
-            {
-                tbNama.Text = reader.GetString(0);
-            }
-            reader.Close();
-            koneksi.CloseConnection();
-        }
-
         private void FormPrestasiAdmin_Load(object sender, EventArgs e)
         {
-            Tampil();
-            //GetNamaPdf();
-            //GetNisnPdf();
+            Show();
+        }
+
+        private void btnSimpan_Click(object sender, EventArgs e)
+        {
+
+            if (tbNamaKegiatan.Text == "" || cbTahunPerolehan.SelectedIndex == -1 || cbPencapaian.SelectedIndex == -1)
+            {
+                MessageBox.Show("Data tidak boleh kosong", "Peringatan",
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+            }
+            else
+            {
+                Prestasi prestasi = new Prestasi();
+                m_pres.Nama_kegiatan = tbNamaKegiatan.Text;
+                m_pres.Jenis_kegiatan = rbIndividual.Text;
+                m_pres.Jenis_kegiatan = rbKelompok.Text;
+                m_pres.Tingkat = rbKabupaten.Text;
+                m_pres.Tingkat = rbProvinsi.Text;
+                m_pres.Tingkat = rbNasional.Text;
+                m_pres.Tingkat = rbInternasional.Text;
+                m_pres.Tahun_perolehan = cbTahunPerolehan.Text;
+                m_pres.Pencapaian = cbPencapaian.Text;
+
+                prestasi.Insert(m_pres);
+
+                tbNamaKegiatan.Text = "";
+                rbIndividual.Checked = true;
+                rbKelompok.Checked = true;
+                rbKabupaten.Checked = true;
+                rbProvinsi.Checked = true;
+                rbNasional.Checked = true;
+                rbInternasional.Checked = true;
+                cbTahunPerolehan.SelectedIndex = -1;
+                cbPencapaian.SelectedIndex = -1;
+
+                Show();
+            }
         }
     }
 }
