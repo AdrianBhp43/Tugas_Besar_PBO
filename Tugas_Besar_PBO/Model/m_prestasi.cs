@@ -10,15 +10,16 @@ namespace Tugas_Besar_PBO.Model
 {
     internal class m_prestasi
     {
-        string nama_kegiatan,jenis_kegiatan, tingkat, tahun_perolehan, pencapaian;
+        string id_prestasi, nama_kegiatan,jenis_kegiatan, tingkat, tahun_perolehan, pencapaian;
 
         public m_prestasi()
         {
 
         }
 
-        public m_prestasi(string nama_kegiatan, string jenis_kegiatan, string tingkat, string tahun_perolehan, string pencapaian)
+        public m_prestasi(string id_prestasi, string nama_kegiatan, string jenis_kegiatan, string tingkat, string tahun_perolehan, string pencapaian)
         {
+            this.id_prestasi = id_prestasi;
             this.nama_kegiatan = nama_kegiatan;
             this.jenis_kegiatan = jenis_kegiatan;
             this.tingkat = tingkat;
@@ -26,6 +27,7 @@ namespace Tugas_Besar_PBO.Model
             this.pencapaian = pencapaian;
         }
 
+        public string Id_prestasi { get => id_prestasi; set => id_prestasi = value; }
         public string Nama_kegiatan { get => nama_kegiatan; set => nama_kegiatan = value; }
         public string Jenis_kegiatan { get => jenis_kegiatan; set => jenis_kegiatan = value; }
         public string Tingkat { get => tingkat; set => tingkat = value; }

@@ -41,5 +41,17 @@ namespace Tugas_Besar_PBO
             fip.MdiParent = this;
             fip.Show();
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLoginAdmin fla = new FormLoginAdmin();
+            fla.MdiParent = this;
+            fla.Show();
+        }
     }
 }

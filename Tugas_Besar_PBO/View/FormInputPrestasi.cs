@@ -34,7 +34,7 @@ namespace Tugas_Besar_PBO.View
                 MessageBox.Show("Data tidak boleh kosong", "Peringatan",
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                string Jenis_kegiatan = null;
+                /*string Jenis_kegiatan = null;
                 if (rbIndividual.Checked)
                 {
                     Jenis_kegiatan = rbIndividual.Text;
@@ -61,7 +61,7 @@ namespace Tugas_Besar_PBO.View
                 else
                 {
                     Tingkat = rbInternasional.Text;
-                }
+                }*/
 
             }
             else

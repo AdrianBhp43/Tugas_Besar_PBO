@@ -37,7 +37,6 @@
             this.tbPasswordd = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.btnAdmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbNama
@@ -60,7 +59,7 @@
             // 
             // btnRegistrasi
             // 
-            this.btnRegistrasi.Location = new System.Drawing.Point(156, 319);
+            this.btnRegistrasi.Location = new System.Drawing.Point(253, 303);
             this.btnRegistrasi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegistrasi.Name = "btnRegistrasi";
             this.btnRegistrasi.Size = new System.Drawing.Size(174, 70);
@@ -115,13 +114,13 @@
             this.label5.Location = new System.Drawing.Point(285, 37);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 20);
+            this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Registrasi";
+            this.label5.Text = "Register";
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(354, 319);
+            this.btnLogin.Location = new System.Drawing.Point(253, 383);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(174, 70);
@@ -130,21 +129,11 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // btnAdmin
-            // 
-            this.btnAdmin.Location = new System.Drawing.Point(547, 319);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(75, 29);
-            this.btnAdmin.TabIndex = 11;
-            this.btnAdmin.Text = "Admin";
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 419);
-            this.Controls.Add(this.btnAdmin);
+            this.ClientSize = new System.Drawing.Size(634, 473);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -174,6 +163,5 @@
         private System.Windows.Forms.TextBox tbPasswordd;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnAdmin;
     }
 }

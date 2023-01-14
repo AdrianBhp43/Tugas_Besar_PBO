@@ -84,14 +84,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Admin.cs" />
+    <Compile Include="Controller\Biaya.cs" />
+    <Compile Include="Controller\RegisterAdmin.cs" />
     <Compile Include="Controller\Biodata.cs" />
     <Compile Include="Controller\Koneksi.cs" />
     <Compile Include="Controller\Prestasi.cs" />
     <Compile Include="Controller\Register.cs" />
     <Compile Include="Controller\ValidasiLogin.cs" />
+    <Compile Include="Model\m_admin.cs" />
+    <Compile Include="Model\m_biaya.cs" />
     <Compile Include="Model\m_biodata.cs" />
     <Compile Include="Model\m_prestasi.cs" />
     <Compile Include="Model\m_register.cs" />
+    <Compile Include="Model\m_register_admin.cs" />
+    <Compile Include="View\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormBiaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormBiaya.Designer.cs">
+      <DependentUpon>FormBiaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormDashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormDashboardAdmin.Designer.cs">
+      <DependentUpon>FormDashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormLoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormLoginAdmin.Designer.cs">
+      <DependentUpon>FormLoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormPrestasiAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormPrestasiAdmin.Designer.cs">
+      <DependentUpon>FormPrestasiAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormRegisterAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormRegisterAdmin.Designer.cs">
+      <DependentUpon>FormRegisterAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormBiodata.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +166,27 @@
     <Compile Include="View\FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormStart.Designer.cs">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormDashboardAdmin.resx">
+      <DependentUpon>FormDashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormLoginAdmin.resx">
+      <DependentUpon>FormLoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormPrestasiAdmin.resx">
+      <DependentUpon>FormPrestasiAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormRegisterAdmin.resx">
+      <DependentUpon>FormRegisterAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormBiodata.resx">
       <DependentUpon>FormBiodata.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormStart.resx">
+      <DependentUpon>FormStart.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
