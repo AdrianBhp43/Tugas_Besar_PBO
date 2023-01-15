@@ -68,5 +68,15 @@ namespace Tugas_Besar_PBO.View
             fl.Show();
             this.Hide();
         }
+
+        private void tbNama_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -325,13 +325,14 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.groupBox4.Controls.Add(this.tbCariData);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Location = new System.Drawing.Point(592, 203);
+            this.groupBox4.Location = new System.Drawing.Point(619, 203);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox4.Size = new System.Drawing.Size(349, 108);
+            this.groupBox4.Size = new System.Drawing.Size(322, 108);
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Form Pencarian";
@@ -359,6 +360,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Tugas_Besar_PBO.Properties.Resources._219af474013555e1aa8ba457fc5a1d66;
             this.ClientSize = new System.Drawing.Size(964, 549);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.cbTa);

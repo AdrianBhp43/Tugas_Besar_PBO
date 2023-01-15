@@ -210,6 +210,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\FormInputPrestasi.resx">
       <DependentUpon>FormInputPrestasi.cs</DependentUpon>
@@ -240,6 +241,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\enam_berlian-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea4f6d3a64c3cbce3877604bb7a4a152.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea4f6d3a64c3cbce3877604bb7a4a1521.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\219af474013555e1aa8ba457fc5a1d66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

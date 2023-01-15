@@ -60,6 +60,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::Tugas_Besar_PBO.Properties.Resources.sd;
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.label7);
@@ -80,13 +81,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.rbInternasional);
             this.groupBox1.Controls.Add(this.rbProvinsi);
             this.groupBox1.Controls.Add(this.rbNasional);
             this.groupBox1.Controls.Add(this.rbKabupaten);
             this.groupBox1.Location = new System.Drawing.Point(24, 227);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(403, 75);
+            this.groupBox1.Size = new System.Drawing.Size(349, 75);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tingkat";
@@ -94,7 +96,7 @@
             // rbInternasional
             // 
             this.rbInternasional.AutoSize = true;
-            this.rbInternasional.Location = new System.Drawing.Point(310, 31);
+            this.rbInternasional.Location = new System.Drawing.Point(254, 31);
             this.rbInternasional.Name = "rbInternasional";
             this.rbInternasional.Size = new System.Drawing.Size(85, 17);
             this.rbInternasional.TabIndex = 24;
@@ -104,7 +106,7 @@
             // rbProvinsi
             // 
             this.rbProvinsi.AutoSize = true;
-            this.rbProvinsi.Location = new System.Drawing.Point(110, 31);
+            this.rbProvinsi.Location = new System.Drawing.Point(89, 31);
             this.rbProvinsi.Name = "rbProvinsi";
             this.rbProvinsi.Size = new System.Drawing.Size(62, 17);
             this.rbProvinsi.TabIndex = 22;
@@ -114,7 +116,7 @@
             // rbNasional
             // 
             this.rbNasional.AutoSize = true;
-            this.rbNasional.Location = new System.Drawing.Point(210, 31);
+            this.rbNasional.Location = new System.Drawing.Point(169, 31);
             this.rbNasional.Name = "rbNasional";
             this.rbNasional.Size = new System.Drawing.Size(66, 17);
             this.rbNasional.TabIndex = 23;
@@ -144,9 +146,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(27, 368);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 13);
+            this.label7.Size = new System.Drawing.Size(74, 13);
             this.label7.TabIndex = 15;
             this.label7.Text = "Pencapaian";
             // 
@@ -182,38 +186,50 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Blue;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(27, 305);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 13);
+            this.label6.Size = new System.Drawing.Size(104, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "Tahun Perolehan";
             // 
             // rbKelompok
             // 
             this.rbKelompok.AutoSize = true;
+            this.rbKelompok.BackColor = System.Drawing.Color.White;
+            this.rbKelompok.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbKelompok.ForeColor = System.Drawing.Color.Black;
             this.rbKelompok.Location = new System.Drawing.Point(151, 199);
             this.rbKelompok.Name = "rbKelompok";
             this.rbKelompok.Size = new System.Drawing.Size(93, 17);
             this.rbKelompok.TabIndex = 5;
             this.rbKelompok.Text = "Kelompok/ tim";
-            this.rbKelompok.UseVisualStyleBackColor = true;
+            this.rbKelompok.UseVisualStyleBackColor = false;
             // 
             // rbIndividual
             // 
             this.rbIndividual.AutoSize = true;
+            this.rbIndividual.BackColor = System.Drawing.Color.White;
+            this.rbIndividual.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbIndividual.ForeColor = System.Drawing.Color.Black;
             this.rbIndividual.Location = new System.Drawing.Point(30, 199);
             this.rbIndividual.Name = "rbIndividual";
             this.rbIndividual.Size = new System.Drawing.Size(70, 17);
             this.rbIndividual.TabIndex = 4;
             this.rbIndividual.Text = "Individual";
-            this.rbIndividual.UseVisualStyleBackColor = true;
+            this.rbIndividual.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Blue;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(27, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.Size = new System.Drawing.Size(90, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Jenis Kegiatan";
             // 
@@ -227,9 +243,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Blue;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(27, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(93, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nama Kegiatan";
             // 
@@ -244,9 +263,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(135, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tambah Prestasi";
             // 
@@ -291,6 +312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(810, 606);
             this.Controls.Add(this.panel1);
             this.Name = "FormInputPrestasi";

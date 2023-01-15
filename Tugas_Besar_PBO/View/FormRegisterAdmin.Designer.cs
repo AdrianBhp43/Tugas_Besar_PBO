@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegisterAdmin));
             this.btnLogin = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,12 +43,14 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(153, 197);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLogin.Location = new System.Drawing.Point(234, 197);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(116, 46);
+            this.btnLogin.Size = new System.Drawing.Size(56, 24);
             this.btnLogin.TabIndex = 20;
             this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label5
@@ -70,11 +73,11 @@
             // 
             // tbPasswordd
             // 
-            this.tbPasswordd.Location = new System.Drawing.Point(105, 146);
+            this.tbPasswordd.Location = new System.Drawing.Point(105, 154);
             this.tbPasswordd.Multiline = true;
             this.tbPasswordd.Name = "tbPasswordd";
             this.tbPasswordd.PasswordChar = '*';
-            this.tbPasswordd.Size = new System.Drawing.Size(249, 35);
+            this.tbPasswordd.Size = new System.Drawing.Size(249, 31);
             this.tbPasswordd.TabIndex = 17;
             // 
             // label2
@@ -97,12 +100,14 @@
             // 
             // btnRegistrasi
             // 
-            this.btnRegistrasi.Location = new System.Drawing.Point(153, 249);
+            this.btnRegistrasi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnRegistrasi.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnRegistrasi.Location = new System.Drawing.Point(296, 197);
             this.btnRegistrasi.Name = "btnRegistrasi";
-            this.btnRegistrasi.Size = new System.Drawing.Size(116, 46);
+            this.btnRegistrasi.Size = new System.Drawing.Size(58, 23);
             this.btnRegistrasi.TabIndex = 14;
             this.btnRegistrasi.Text = "Daftar";
-            this.btnRegistrasi.UseVisualStyleBackColor = true;
+            this.btnRegistrasi.UseVisualStyleBackColor = false;
             this.btnRegistrasi.Click += new System.EventHandler(this.btnRegistrasi_Click);
             // 
             // tbUser
@@ -123,20 +128,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(354, 249);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(105, 198);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 23);
             this.button1.TabIndex = 21;
             this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormRegisterAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 307);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(423, 276);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label5);
@@ -147,7 +155,7 @@
             this.Controls.Add(this.btnRegistrasi);
             this.Controls.Add(this.tbUser);
             this.Controls.Add(this.tbNama);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormRegisterAdmin";
             this.Text = "FormAdmin";
             this.Load += new System.EventHandler(this.FormRegisterAdmin_Load);

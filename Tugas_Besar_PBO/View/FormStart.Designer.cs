@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStart));
             this.btnUser = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnUser
             // 
-            this.btnUser.Location = new System.Drawing.Point(203, 137);
+            this.btnUser.Location = new System.Drawing.Point(666, 170);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(116, 46);
             this.btnUser.TabIndex = 22;
@@ -44,7 +45,7 @@
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(71, 137);
+            this.btnAdmin.Location = new System.Drawing.Point(204, 170);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(116, 46);
             this.btnAdmin.TabIndex = 21;
@@ -56,10 +57,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 227);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(942, 396);
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnAdmin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormStart";
             this.Text = "FormStart";
             this.ResumeLayout(false);
