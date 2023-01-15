@@ -38,7 +38,7 @@ namespace Tugas_Besar_PBO.View
                 if (reader.HasRows)
                 {
                     MessageBox.Show("Login Admin Berhasil");
-                    FormAdmin fa = new FormAdmin();
+                    FormDashboardAdmin fa = new FormDashboardAdmin();
                     fa.Show();
                     this.Hide();
                 }

@@ -67,25 +67,41 @@ namespace Tugas_Besar_PBO.View
             else
             {
                 Prestasi prestasi = new Prestasi();
+
                 m_pres.Nama_kegiatan = tbNamaKegiatan.Text;
-                m_pres.Jenis_kegiatan = rbIndividual.Text;
-                m_pres.Jenis_kegiatan = rbKelompok.Text;
-                m_pres.Tingkat = rbKabupaten.Text;
-                m_pres.Tingkat = rbProvinsi.Text;
-                m_pres.Tingkat = rbNasional.Text;
-                m_pres.Tingkat = rbInternasional.Text;
+                    if(rbIndividual.Checked)
+                {
+                    m_pres.Jenis_kegiatan = rbIndividual.Text;
+                }
+                else
+                {
+                    m_pres.Jenis_kegiatan = rbKelompok.Text;
+                }
+                if (rbKabupaten.Checked)
+                {
+                    m_pres.Tingkat = rbKabupaten.Text;
+                }else if (rbProvinsi.Checked)
+                {
+                    m_pres.Tingkat = rbProvinsi.Text;
+                }else if (rbNasional.Checked)
+                {
+                    m_pres.Tingkat = rbNasional.Text;
+                }else if (rbInternasional.Checked)
+                {
+                    m_pres.Tingkat = rbInternasional.Text;
+                }
                 m_pres.Tahun_perolehan = cbTahunPerolehan.Text;
                 m_pres.Pencapaian = cbPencapaian.Text;
 
                 prestasi.Insert(m_pres);
 
                 tbNamaKegiatan.Text = "";
-                rbIndividual.Checked = true;
-                rbKelompok.Checked = true;
-                rbKabupaten.Checked = true;
-                rbProvinsi.Checked = true;
-                rbNasional.Checked = true;
-                rbInternasional.Checked = true;
+                rbIndividual.Checked = false;
+                rbKelompok.Checked = false;
+                rbKabupaten.Checked = false;
+                rbProvinsi.Checked = false;
+                rbNasional.Checked = false;
+                rbInternasional.Checked = false;
                 cbTahunPerolehan.SelectedIndex = -1;
                 cbPencapaian.SelectedIndex = -1 ;
 

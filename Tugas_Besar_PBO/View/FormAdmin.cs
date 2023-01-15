@@ -34,15 +34,15 @@ namespace Tugas_Besar_PBO.View
 
             //Mengubah Nama Kolom Tabel
             DataMahasiswa.Columns[0].HeaderText = "Id";
-            DataMahasiswa.Columns[0].HeaderText = "Nama";
-            DataMahasiswa.Columns[0].HeaderText = "TTL";
-            DataMahasiswa.Columns[0].HeaderText = "Jenis Kelamin";
-            DataMahasiswa.Columns[0].HeaderText = "Asal Sekolah";
-            DataMahasiswa.Columns[0].HeaderText = "NISN";
-            DataMahasiswa.Columns[0].HeaderText = "Tahun Lulus";
-            DataMahasiswa.Columns[0].HeaderText = "Alamat";
-            DataMahasiswa.Columns[0].HeaderText = "Email";
-            DataMahasiswa.Columns[0].HeaderText = "No HP";
+            DataMahasiswa.Columns[1].HeaderText = "Nama";
+            DataMahasiswa.Columns[2].HeaderText = "TTL";
+            DataMahasiswa.Columns[3].HeaderText = "Jenis Kelamin";
+            DataMahasiswa.Columns[4].HeaderText = "Asal Sekolah";
+            DataMahasiswa.Columns[5].HeaderText = "NISN";
+            DataMahasiswa.Columns[6].HeaderText = "Tahun Lulus";
+            DataMahasiswa.Columns[7].HeaderText = "Alamat";
+            DataMahasiswa.Columns[8].HeaderText = "Email";
+            DataMahasiswa.Columns[9].HeaderText = "No HP";
         }
 
         public FormAdmin()

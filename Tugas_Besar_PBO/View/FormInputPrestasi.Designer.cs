@@ -30,6 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbInternasional = new System.Windows.Forms.RadioButton();
+            this.rbProvinsi = new System.Windows.Forms.RadioButton();
+            this.rbNasional = new System.Windows.Forms.RadioButton();
+            this.rbKabupaten = new System.Windows.Forms.RadioButton();
             this.btnSave = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.cbPencapaian = new System.Windows.Forms.ComboBox();
@@ -46,10 +50,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rbInternasional = new System.Windows.Forms.RadioButton();
-            this.rbNasional = new System.Windows.Forms.RadioButton();
-            this.rbProvinsi = new System.Windows.Forms.RadioButton();
-            this.rbKabupaten = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -91,6 +91,46 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tingkat";
             // 
+            // rbInternasional
+            // 
+            this.rbInternasional.AutoSize = true;
+            this.rbInternasional.Location = new System.Drawing.Point(310, 31);
+            this.rbInternasional.Name = "rbInternasional";
+            this.rbInternasional.Size = new System.Drawing.Size(85, 17);
+            this.rbInternasional.TabIndex = 24;
+            this.rbInternasional.Text = "Internasional";
+            this.rbInternasional.UseVisualStyleBackColor = true;
+            // 
+            // rbProvinsi
+            // 
+            this.rbProvinsi.AutoSize = true;
+            this.rbProvinsi.Location = new System.Drawing.Point(110, 31);
+            this.rbProvinsi.Name = "rbProvinsi";
+            this.rbProvinsi.Size = new System.Drawing.Size(62, 17);
+            this.rbProvinsi.TabIndex = 22;
+            this.rbProvinsi.Text = "Provinsi";
+            this.rbProvinsi.UseVisualStyleBackColor = true;
+            // 
+            // rbNasional
+            // 
+            this.rbNasional.AutoSize = true;
+            this.rbNasional.Location = new System.Drawing.Point(210, 31);
+            this.rbNasional.Name = "rbNasional";
+            this.rbNasional.Size = new System.Drawing.Size(66, 17);
+            this.rbNasional.TabIndex = 23;
+            this.rbNasional.Text = "Nasional";
+            this.rbNasional.UseVisualStyleBackColor = true;
+            // 
+            // rbKabupaten
+            // 
+            this.rbKabupaten.AutoSize = true;
+            this.rbKabupaten.Location = new System.Drawing.Point(6, 31);
+            this.rbKabupaten.Name = "rbKabupaten";
+            this.rbKabupaten.Size = new System.Drawing.Size(77, 17);
+            this.rbKabupaten.TabIndex = 21;
+            this.rbKabupaten.Text = "Kabupaten";
+            this.rbKabupaten.UseVisualStyleBackColor = true;
+            // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(699, 528);
@@ -114,11 +154,12 @@
             // 
             this.cbPencapaian.FormattingEnabled = true;
             this.cbPencapaian.Items.AddRange(new object[] {
-            "2018",
-            "2019",
-            "2020",
-            "2021",
-            "2022"});
+            "JUARA I",
+            "JUARA II",
+            "JUARA III",
+            "HARAPAN I",
+            "HARAPAN II",
+            "HARAPAN III"});
             this.cbPencapaian.Location = new System.Drawing.Point(30, 384);
             this.cbPencapaian.Name = "cbPencapaian";
             this.cbPencapaian.Size = new System.Drawing.Size(343, 21);
@@ -245,46 +286,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(307, 148);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            // 
-            // rbInternasional
-            // 
-            this.rbInternasional.AutoSize = true;
-            this.rbInternasional.Location = new System.Drawing.Point(310, 31);
-            this.rbInternasional.Name = "rbInternasional";
-            this.rbInternasional.Size = new System.Drawing.Size(85, 17);
-            this.rbInternasional.TabIndex = 24;
-            this.rbInternasional.Text = "Internasional";
-            this.rbInternasional.UseVisualStyleBackColor = true;
-            // 
-            // rbNasional
-            // 
-            this.rbNasional.AutoSize = true;
-            this.rbNasional.Location = new System.Drawing.Point(210, 31);
-            this.rbNasional.Name = "rbNasional";
-            this.rbNasional.Size = new System.Drawing.Size(66, 17);
-            this.rbNasional.TabIndex = 23;
-            this.rbNasional.Text = "Nasional";
-            this.rbNasional.UseVisualStyleBackColor = true;
-            // 
-            // rbProvinsi
-            // 
-            this.rbProvinsi.AutoSize = true;
-            this.rbProvinsi.Location = new System.Drawing.Point(110, 31);
-            this.rbProvinsi.Name = "rbProvinsi";
-            this.rbProvinsi.Size = new System.Drawing.Size(62, 17);
-            this.rbProvinsi.TabIndex = 22;
-            this.rbProvinsi.Text = "Provinsi";
-            this.rbProvinsi.UseVisualStyleBackColor = true;
-            // 
-            // rbKabupaten
-            // 
-            this.rbKabupaten.AutoSize = true;
-            this.rbKabupaten.Location = new System.Drawing.Point(6, 31);
-            this.rbKabupaten.Name = "rbKabupaten";
-            this.rbKabupaten.Size = new System.Drawing.Size(77, 17);
-            this.rbKabupaten.TabIndex = 21;
-            this.rbKabupaten.Text = "Kabupaten";
-            this.rbKabupaten.UseVisualStyleBackColor = true;
             // 
             // FormInputPrestasi
             // 

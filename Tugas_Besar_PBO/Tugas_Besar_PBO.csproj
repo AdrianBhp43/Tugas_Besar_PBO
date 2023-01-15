@@ -172,6 +172,12 @@
     <Compile Include="View\FormStart.Designer.cs">
       <DependentUpon>FormStart.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormTransaksiAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormTransaksiAdmin.Designer.cs">
+      <DependentUpon>FormTransaksiAdmin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormPrestasiAdmin.resx">
       <DependentUpon>FormPrestasiAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormProgramstudi.resx">
+      <DependentUpon>FormProgramstudi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormRegisterAdmin.resx">
       <DependentUpon>FormRegisterAdmin.cs</DependentUpon>
@@ -213,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormTransaksiAdmin.resx">
+      <DependentUpon>FormTransaksiAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

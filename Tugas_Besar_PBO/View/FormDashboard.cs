@@ -33,6 +33,7 @@ namespace Tugas_Besar_PBO
             FormBiodata fb = new FormBiodata();
             fb.MdiParent = this;
             fb.Show();
+            this.Size = new Size(1000, 650);
         }
 
         private void tambahPrestasiToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,11 +41,22 @@ namespace Tugas_Besar_PBO
             FormInputPrestasi fip = new FormInputPrestasi();
             fip.MdiParent = this;
             fip.Show();
+            //this.Size = new Size(950, 650);
         }
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            if (true)
+            {
+
+                MessageBox.Show("Apakah Anda ingin Logout", "Information",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                
+            }
         }
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,6 +64,14 @@ namespace Tugas_Besar_PBO
             FormLoginAdmin fla = new FormLoginAdmin();
             fla.MdiParent = this;
             fla.Show();
+        }
+
+        private void pemilihanProgamStudiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormProgramstudi fps = new FormProgramstudi();
+            fps.MdiParent = this;
+            fps.Show();
+            this.Size = new Size(816, 440);
         }
     }
 }

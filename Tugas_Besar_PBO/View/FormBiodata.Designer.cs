@@ -48,12 +48,12 @@
             this.tbTtl = new System.Windows.Forms.TextBox();
             this.tbNama = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,13 +115,13 @@
             this.label10.Location = new System.Drawing.Point(464, 726);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(172, 33);
+            this.label10.Size = new System.Drawing.Size(186, 33);
             this.label10.TabIndex = 20;
-            this.label10.Text = "No Hanphone";
+            this.label10.Text = "No Handphone";
             // 
             // tbNoHp
             // 
-            this.tbNoHp.Location = new System.Drawing.Point(465, 758);
+            this.tbNoHp.Location = new System.Drawing.Point(465, 778);
             this.tbNoHp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbNoHp.Name = "tbNoHp";
             this.tbNoHp.Size = new System.Drawing.Size(444, 26);
@@ -281,15 +281,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Nama";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(27, 126);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(387, 595);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
@@ -310,6 +301,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Form Pendaftaran";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(38, 126);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(387, 595);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormBiodata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -322,9 +322,9 @@
             this.Load += new System.EventHandler(this.FormBiodata_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,7 +342,6 @@
         private System.Windows.Forms.TextBox tbTtl;
         private System.Windows.Forms.TextBox tbNama;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
@@ -354,5 +353,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox tbNoHp;
         private System.Windows.Forms.ComboBox cbJenisKelamin;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

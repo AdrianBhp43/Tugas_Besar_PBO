@@ -35,9 +35,7 @@
             this.transaksiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pendaftaranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pemilihanProgamStudiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.biayaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adminToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.prestasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informasiPrestasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tambahPrestasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,6 +44,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -53,8 +52,8 @@
             this.prestasiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(852, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1278, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,64 +63,51 @@
             this.logoutToolStripMenuItem,
             this.toolStripMenuItem2});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.logoutToolStripMenuItem.Text = "&Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(267, 6);
             // 
             // transaksiToolStripMenuItem
             // 
             this.transaksiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pendaftaranToolStripMenuItem,
             this.pemilihanProgamStudiToolStripMenuItem,
-            this.biayaToolStripMenuItem,
-            this.informasiToolStripMenuItem,
-            this.adminToolStripMenuItem1});
+            this.informasiToolStripMenuItem});
             this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
-            this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(85, 22);
+            this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
             this.transaksiToolStripMenuItem.Text = "&Administrasi";
             this.transaksiToolStripMenuItem.Click += new System.EventHandler(this.transaksiToolStripMenuItem_Click);
             // 
             // pendaftaranToolStripMenuItem
             // 
             this.pendaftaranToolStripMenuItem.Name = "pendaftaranToolStripMenuItem";
-            this.pendaftaranToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pendaftaranToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.pendaftaranToolStripMenuItem.Text = "&Pendaftaran";
             this.pendaftaranToolStripMenuItem.Click += new System.EventHandler(this.pendaftaranToolStripMenuItem_Click);
             // 
             // pemilihanProgamStudiToolStripMenuItem
             // 
             this.pemilihanProgamStudiToolStripMenuItem.Name = "pemilihanProgamStudiToolStripMenuItem";
-            this.pemilihanProgamStudiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pemilihanProgamStudiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.pemilihanProgamStudiToolStripMenuItem.Text = "&Progam Studi";
-            // 
-            // biayaToolStripMenuItem
-            // 
-            this.biayaToolStripMenuItem.Name = "biayaToolStripMenuItem";
-            this.biayaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.biayaToolStripMenuItem.Text = "&Biaya";
+            this.pemilihanProgamStudiToolStripMenuItem.Click += new System.EventHandler(this.pemilihanProgamStudiToolStripMenuItem_Click);
             // 
             // informasiToolStripMenuItem
             // 
             this.informasiToolStripMenuItem.Name = "informasiToolStripMenuItem";
-            this.informasiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.informasiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.informasiToolStripMenuItem.Text = "&Informasi";
-            // 
-            // adminToolStripMenuItem1
-            // 
-            this.adminToolStripMenuItem1.Name = "adminToolStripMenuItem1";
-            this.adminToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.adminToolStripMenuItem1.Text = "&Admin";
             // 
             // prestasiToolStripMenuItem
             // 
@@ -129,31 +115,30 @@
             this.informasiPrestasiToolStripMenuItem,
             this.tambahPrestasiToolStripMenuItem});
             this.prestasiToolStripMenuItem.Name = "prestasiToolStripMenuItem";
-            this.prestasiToolStripMenuItem.Size = new System.Drawing.Size(59, 22);
+            this.prestasiToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.prestasiToolStripMenuItem.Text = "&Prestasi";
             // 
             // informasiPrestasiToolStripMenuItem
             // 
             this.informasiPrestasiToolStripMenuItem.Name = "informasiPrestasiToolStripMenuItem";
-            this.informasiPrestasiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.informasiPrestasiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.informasiPrestasiToolStripMenuItem.Text = "&Informasi Prestasi";
             // 
             // tambahPrestasiToolStripMenuItem
             // 
             this.tambahPrestasiToolStripMenuItem.Name = "tambahPrestasiToolStripMenuItem";
-            this.tambahPrestasiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tambahPrestasiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.tambahPrestasiToolStripMenuItem.Text = "&Tambah Prestasi";
             this.tambahPrestasiToolStripMenuItem.Click += new System.EventHandler(this.tambahPrestasiToolStripMenuItem_Click);
             // 
             // FormDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 429);
+            this.ClientSize = new System.Drawing.Size(1278, 660);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormDashboard";
             this.Text = "Dashboard";
             this.menuStrip1.ResumeLayout(false);
@@ -175,9 +160,7 @@
         private System.Windows.Forms.ToolStripMenuItem tambahPrestasiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pendaftaranToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pemilihanProgamStudiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem biayaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informasiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem1;
     }
 }
 

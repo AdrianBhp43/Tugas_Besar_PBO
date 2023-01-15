@@ -34,10 +34,9 @@
             // 
             // btnUser
             // 
-            this.btnUser.Location = new System.Drawing.Point(298, 154);
-            this.btnUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUser.Location = new System.Drawing.Point(203, 137);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(174, 70);
+            this.btnUser.Size = new System.Drawing.Size(116, 46);
             this.btnUser.TabIndex = 22;
             this.btnUser.Text = "User";
             this.btnUser.UseVisualStyleBackColor = true;
@@ -45,10 +44,9 @@
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(100, 154);
-            this.btnAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdmin.Location = new System.Drawing.Point(71, 137);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(174, 70);
+            this.btnAdmin.Size = new System.Drawing.Size(116, 46);
             this.btnAdmin.TabIndex = 21;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = true;
@@ -56,11 +54,12 @@
             // 
             // FormStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(601, 349);
+            this.ClientSize = new System.Drawing.Size(401, 227);
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnAdmin);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormStart";
             this.Text = "FormStart";
             this.ResumeLayout(false);
