@@ -46,17 +46,7 @@ namespace Tugas_Besar_PBO
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (true)
-            {
-
-                MessageBox.Show("Apakah Anda ingin Logout", "Information",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
-            else
-            {
-                
-            }
+          this.Close();
         }
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,6 +62,11 @@ namespace Tugas_Besar_PBO
             fps.MdiParent = this;
             fps.Show();
             this.Size = new Size(816, 440);
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

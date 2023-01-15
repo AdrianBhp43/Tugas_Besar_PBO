@@ -59,6 +59,13 @@ namespace Tugas_Besar_PBO.View
             fla.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormStart fl = new FormStart();
+            fl.Show();
+            this.Hide();
+        }
     }
 }
 

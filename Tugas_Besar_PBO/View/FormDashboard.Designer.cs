@@ -35,9 +35,7 @@
             this.transaksiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pendaftaranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pemilihanProgamStudiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prestasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informasiPrestasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tambahPrestasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +54,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1278, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -82,8 +81,7 @@
             // 
             this.transaksiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pendaftaranToolStripMenuItem,
-            this.pemilihanProgamStudiToolStripMenuItem,
-            this.informasiToolStripMenuItem});
+            this.pemilihanProgamStudiToolStripMenuItem});
             this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
             this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
             this.transaksiToolStripMenuItem.Text = "&Administrasi";
@@ -103,26 +101,13 @@
             this.pemilihanProgamStudiToolStripMenuItem.Text = "&Progam Studi";
             this.pemilihanProgamStudiToolStripMenuItem.Click += new System.EventHandler(this.pemilihanProgamStudiToolStripMenuItem_Click);
             // 
-            // informasiToolStripMenuItem
-            // 
-            this.informasiToolStripMenuItem.Name = "informasiToolStripMenuItem";
-            this.informasiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.informasiToolStripMenuItem.Text = "&Informasi";
-            // 
             // prestasiToolStripMenuItem
             // 
             this.prestasiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.informasiPrestasiToolStripMenuItem,
             this.tambahPrestasiToolStripMenuItem});
             this.prestasiToolStripMenuItem.Name = "prestasiToolStripMenuItem";
             this.prestasiToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.prestasiToolStripMenuItem.Text = "&Prestasi";
-            // 
-            // informasiPrestasiToolStripMenuItem
-            // 
-            this.informasiPrestasiToolStripMenuItem.Name = "informasiPrestasiToolStripMenuItem";
-            this.informasiPrestasiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.informasiPrestasiToolStripMenuItem.Text = "&Informasi Prestasi";
             // 
             // tambahPrestasiToolStripMenuItem
             // 
@@ -156,11 +141,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem transaksiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prestasiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem informasiPrestasiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tambahPrestasiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pendaftaranToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pemilihanProgamStudiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem informasiToolStripMenuItem;
     }
 }
 

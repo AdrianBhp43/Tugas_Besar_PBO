@@ -25,20 +25,18 @@ namespace Tugas_Besar_PBO.View
         public void Tampilkan()
         {
             //Query DB
-            //DataMahasiswa.DataSource = koneksi.ShowData("SELECT * FROM t_prestasi");
+            DataPrestasi.DataSource = koneksi.ShowData("SELECT * FROM t_prestasi");
             //DataMahasiswa.DataSource = koneksi.ShowData("SELECT t_prestasi.nisn ,nama,nama_kegiatan ,jenis_kegiatan, tingkat, tahun_perolehan, pencapaian"
             //+ " FROM t_prestasi JOIN pendaftaran on pendaftaran.nisn = t_prestasi.nisn");
-            DataPrestasi.DataSource = koneksi.ShowData("SELECT id, pendaftaran.nisn, nama, nama_kegiatan ,jenis_kegiatan, tingkat, tahun_perolehan, pencapaian"
-            + " FROM pendaftaran JOIN t_prestasi on t_prestasi.nisn = pendaftaran.nisn");
+            //DataPrestasi.DataSource = koneksi.ShowData("SELECT id, pendaftaran.nisn, nama, nama_kegiatan ,jenis_kegiatan, tingkat, tahun_perolehan, pencapaian"
+            //+ " FROM pendaftaran JOIN t_prestasi on t_prestasi.nisn = pendaftaran.nisn");
 
-
-            DataPrestasi.Columns[0].HeaderText = "NISN";
-            DataPrestasi.Columns[1].HeaderText = "Nama";
-            DataPrestasi.Columns[2].HeaderText = "Nama Kegiatan";
-            DataPrestasi.Columns[3].HeaderText = "Jenis Kegiatan";
-            DataPrestasi.Columns[4].HeaderText = "Tingkat";
-            DataPrestasi.Columns[5].HeaderText = "Tahun Perolehan";
-            DataPrestasi.Columns[6].HeaderText = "Pencapaian";
+            DataPrestasi.Columns[0].HeaderText = "Id";
+            DataPrestasi.Columns[1].HeaderText = "Nama Kegiatan";
+            DataPrestasi.Columns[2].HeaderText = "Jenis Kegiatan";
+            DataPrestasi.Columns[3].HeaderText = "Tingkat";
+            DataPrestasi.Columns[4].HeaderText = "Tahun Perolehan";
+            DataPrestasi.Columns[5].HeaderText = "Pencapaian";
         }
         public FormPrestasiAdmin()
         {

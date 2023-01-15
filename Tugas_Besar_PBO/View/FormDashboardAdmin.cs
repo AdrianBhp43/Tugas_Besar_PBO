@@ -41,17 +41,7 @@ namespace Tugas_Besar_PBO.View
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (true)
-            {
-
-                MessageBox.Show("Apakah Anda ingin Logout", "Information",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
-            else
-            {
-                
-            }
+            this.Close();
         }
     }
 }

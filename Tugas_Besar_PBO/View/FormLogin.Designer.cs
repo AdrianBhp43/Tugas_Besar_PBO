@@ -35,6 +35,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -108,11 +109,22 @@
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(504, 410);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 35);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 534);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -137,5 +149,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button button1;
     }
 }

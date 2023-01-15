@@ -17,7 +17,7 @@ namespace Tugas_Besar_PBO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTransaksiAdmin());
+            Application.Run(new FormPrestasiAdmin());
         }
     }
 }

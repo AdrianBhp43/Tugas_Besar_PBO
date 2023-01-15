@@ -35,20 +35,18 @@
             // DataTransaksi
             // 
             this.DataTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataTransaksi.Location = new System.Drawing.Point(18, 18);
-            this.DataTransaksi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DataTransaksi.Location = new System.Drawing.Point(12, 12);
             this.DataTransaksi.Name = "DataTransaksi";
             this.DataTransaksi.RowHeadersWidth = 62;
-            this.DataTransaksi.Size = new System.Drawing.Size(1300, 231);
+            this.DataTransaksi.Size = new System.Drawing.Size(456, 150);
             this.DataTransaksi.TabIndex = 0;
             // 
             // FormTransaksiAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1320, 695);
+            this.ClientSize = new System.Drawing.Size(477, 172);
             this.Controls.Add(this.DataTransaksi);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormTransaksiAdmin";
             this.Text = "FormTransaksiAdmin";
             this.Load += new System.EventHandler(this.FormTransaksiAdmin_Load);
